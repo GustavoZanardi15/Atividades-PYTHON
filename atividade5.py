@@ -36,3 +36,9 @@ def gerar_operacao(tipo_operacao):
 num1 = 10
 num2 = 15
 
+
+tipo_operacao = 'soma'
+operacao = gerar_operacao(tipo_operacao)
+
+resultado = aplicar_operacao(num1, num2, operacao)
+print(f"O resultado da {tipo_operacao} entre {num1} e {num2} é: {resultado}")
