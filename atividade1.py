@@ -8,17 +8,14 @@ Crie uma tupla para três produtos diferentes.Exiba o nome do produto mais caro.
 Calcule o valor total em estoque (preço * quantidade) para cada produto e exiba o resultado.
 """
 
-produtos = (
-            ("Mouse", 250 , 50),
-            ("Monitor", 2500.00 , 10),
-            ("Cadeira Gamer", 5000.00, 5)
-            )
+produtos=(
+            ('Monito', 1.500, 10),
+            ('Placa de video', 3.000, 5),
+            ('Mouse', 250, 50)   
+        )
 
-produto_mais_caro = max(produtos, key=lambda produto : produto[1])
-print(f"O produto mais caro é o {produto_mais_caro[0]}")
+produto_mais_caro = max(produtos, key=lambda  produto:produto[0])
+print(f"O produto mais caro em estoque é {produto_mais_caro[0]}")
 
 
-for nome, preco, quantidade in produtos:
-    soma_dos_preco = preco * quantidade
-    print(f"O valor total do produto, {nome} é R${soma_dos_preco:.2f}")
 
