@@ -30,3 +30,9 @@ def gerar_operacao(tipo_operacao):
          return multiplicacao
     else:
         raise ValueError("Operação não encontrada")
+    
+
+
+num1 = 10
+num2 = 15
+
