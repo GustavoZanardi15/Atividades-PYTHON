@@ -13,4 +13,20 @@ Requisitos:
 - Teste com operações de soma e multiplicação.
 """
 
-def aplicar_operacao(num1 , num2,)
+def aplicar_operacao(num1 , num2, operacao):
+    return operacao(num1, num2)
+
+def soma(a, b):
+    return a + b
+
+def multiplicacao(a, b):
+    return a * b
+
+def gerar_operacao(tipo_operacao):
+    tipo_operacao = tipo_operacao.lower()
+    if tipo_operacao == "soma":
+        return soma
+    elif tipo_operacao == "multiplicacao":
+         return multiplicacao
+    else:
+        raise ValueError("Operação não encontrada")
