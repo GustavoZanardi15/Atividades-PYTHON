@@ -7,22 +7,3 @@ nota é o valor.Permitir que o usuário insira o nome de um aluno para consultar
 Exibir a média das notas dos alunos armazenados."""
 
 
-notas_alunos = {
-                "Gustavo": 80,
-                "Renan": 70,
-                "Alisson": 90
-               }
-
-aluno = input(f"Insira o nome do aluno que deseja saber a nota:")
-
-if aluno in notas_alunos:
-    print(f"A nota do aluno {aluno} é: {notas_alunos[aluno]}")
-else:
-    print(f"Aluno não encontrado")
-
-
-alunos = sum(notas_alunos.values())
-quant_alunos = len(notas_alunos)
-media_alunos = alunos / quant_alunos
-print(f"A média dos alunos é {media_alunos}")
-    
