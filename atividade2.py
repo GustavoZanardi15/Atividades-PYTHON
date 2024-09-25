@@ -20,4 +20,7 @@ else:
     print(f"Aluno não encontrado no banco de dados")
 
 
-    
+soma_notas = sum(nota_alunos.values())
+quant_alunos =  len(nota_alunos)
+media_alunos = soma_notas/quant_alunos
+print(f"A média dos alunos é {media_alunos}")
