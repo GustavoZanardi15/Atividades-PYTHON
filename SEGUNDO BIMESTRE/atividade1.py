@@ -40,7 +40,7 @@ idioma(X,'espanhol')<= nacionalidade(X,'espanhol')
 
 
 print("Quem fala português?:")
-print(idioma(X, 'portugês'))
+print(idioma(X,'portugês'))
 
 print("Carlos fala espanhol?")
 print(idioma('Carlos','espanhol'))
